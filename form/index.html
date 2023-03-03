@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="container">
+      <header>Form</header>
+      <form class="form">
+        <div class="input-box">
+          <label>Name</label>
+          <input type="text" placeholder="Name of the employee" required />
+        </div>
+
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Email address" required />
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Mobile Number</label>
+            <input type="number" placeholder="Mobile number" required />
+          </div>
+          <div class="input-box">
+            <label>ID-NO</label>
+            <input type="number" placeholder="Enter ID_number" required />
+          </div>
+        </div>
+        <div class="column">
+          <div class="input-box">
+            <label>Date from</label>
+            <input type="date" placeholder="Date from" required />
+          </div>
+          <div class="input-box">
+            <label>Date to</label>
+            <input type="date" placeholder="Date to" required />
+          </div>
+        </div>
+
+        <div class="input-box">
+          <label>Reasons Regarding the leave</label>
+          <input type="text" placeholder="Reason" required />
+        </div>
+        <button type="submit" class="btn" onclick="openpopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="mf.png" />
+          <h2>Submitted</h2>
+          <p>Your request is submitted wait for the reply</p>
+          <button type="button" onclick="closepopup()">OK</button>
+        </div>
+        <script>
+          let popup = document.getElementById("popup");
+          function openpopup() {
+            popup.classList.add("open-popup");
+          }
+          function closepopup() {
+            popup.classList.remove("open-popup");
+          }
+        </script>
+      </form>
+    </section>
+  </body>
+</html>

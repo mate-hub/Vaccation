@@ -1,0 +1,32 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>track reqest</title>
+  </head>
+  <body>
+    <div class="form">
+        <h2>Enter your ID</h2>
+        <div class="input-box">
+          <input type="number" placeholder="Enter ID_number" required />
+        </div>
+        <button class="btnn"onclick="openpopup()">Track</button>
+        <div class="popup" id="popup">
+          <img src="fm.jpg" />
+          <h3>PROCESSING</h3>
+          <p>Your request is in progress please wait for the reply or contact your manger</p>
+          <button type="button" onclick="closepopup()">OK</button>
+        </div>
+        <script>
+          let popup = document.getElementById("popup");
+          function openpopup() {
+            popup.classList.add("open-popup");
+          }
+          function closepopup() {
+            popup.classList.remove("open-popup");
+          }
+        </script>
+  </body>
+</html>

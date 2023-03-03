@@ -1,0 +1,129 @@
+body {
+  background-image: transparent;
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  width: 320px;
+  height: 250px;
+  background: rgb(19, 15, 19);
+  position: absolute;
+  top: 200px;
+  right: 500;
+  transform: translate(0%, -5%);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.form h2 {
+  width: 300px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 10px;
+}
+
+.form input {
+  width: 310px;
+  height: 35px;
+  background: transparent;
+  border-bottom: 1px solid #ff7200;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 45px;
+  font-family: sans-serif;
+}
+
+.form input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #fff;
+  font-family: Arial;
+}
+
+.btnn {
+  width: 320px;
+  height: 50px;
+  background: #ff7200;
+  border: none;
+  margin-top: 55px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.4s ease;
+}
+.btnn:hover {
+  background: #fff;
+  color: #ff7200;
+}
+.btnn a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+}
+.form .link {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding-top: 20px;
+  text-align: center;
+}
+.popup {
+  width: 350px;
+  height: 400px;
+  background: rgb(0, 0, 0);
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: rgb(255, 255, 255);
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+}
+.popup img {
+  width: 200px;
+  height: 150px;
+  margin-top: 70px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.popup h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 30px 0 30px;
+  text-align: center;
+  color: #000000;
+  background-color: #fff;
+}
+.popup button {
+  width: 100%;
+  margin-top: 15px;
+  padding: 10px 0;
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
